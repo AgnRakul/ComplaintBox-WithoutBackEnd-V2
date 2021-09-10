@@ -8,7 +8,7 @@ const app = express();
 
 // Response -- Everything happend in backend
 
-
+const mongoDbUrl = "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 
 // -------------------------------
@@ -69,8 +69,8 @@ app.get("/submit", (req, res) => {
   }
 
   async function main() {
-    const uri =
-      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = mongoDbUrl;
+
 
     const client = new MongoClient(uri);
 
@@ -105,8 +105,7 @@ app.get("/trend", cors(), (req, res) => {
   }
 
   async function main() {
-    const uri =
-      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = mongoDbUrl;
 
     const client = new MongoClient(uri);
 
@@ -135,8 +134,7 @@ app.get("/showall", cors(), (req, res) => {
   }
 
   async function main() {
-    const uri =
-      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = mongoDbUrl;
 
     const client = new MongoClient(uri);
 
@@ -167,8 +165,7 @@ app.get("/showOne", cors(), (req, res) => {
   }
 
   async function main() {
-    const uri =
-      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = mongoDbUrl
 
     const client = new MongoClient(uri);
 
@@ -209,8 +206,7 @@ app.get("/VoteDown", (req, res) => {
   }
 
   async function main() {
-    const uri =
-      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = mongoDbUrl;
 
     const client = new MongoClient(uri);
 
@@ -252,8 +248,8 @@ app.get("/VoteUp", (req, res) => {
   }
 
   async function main() {
-    const uri =
-      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
+    const uri = mongoDbUrl;
 
     const client = new MongoClient(uri);
 
