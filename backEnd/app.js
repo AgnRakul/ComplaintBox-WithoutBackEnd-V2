@@ -60,7 +60,7 @@ app.get("/submit", (req, res) => {
 
     if (result.acknowledged === true) {
       res.send(
-        "<script>alert('Your Complaint is recorded '); window.location.href = 'http://127.0.0.1:5501/frontEnd/index.html'; </script>"
+        "<script>alert('Your Complaint is recorded '); window.location.href = 'http://127.0.0.1:5500/frontEnd/index.html'; </script>"
       );   // window.location.href = page redircetor
     } else {
       console.log("Data Not Inserted");
@@ -70,7 +70,7 @@ app.get("/submit", (req, res) => {
 
   async function main() {
     const uri =
-      "mongodb+srv://sachin:sachinabs@cluster0.iaz5f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
     const client = new MongoClient(uri);
 
@@ -106,7 +106,7 @@ app.get("/trend", cors(), (req, res) => {
 
   async function main() {
     const uri =
-      "mongodb+srv://sachin:sachinabs@cluster0.iaz5f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
     const client = new MongoClient(uri);
 
@@ -136,7 +136,7 @@ app.get("/showall", cors(), (req, res) => {
 
   async function main() {
     const uri =
-      "mongodb+srv://sachin:sachinabs@cluster0.iaz5f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
     const client = new MongoClient(uri);
 
@@ -168,7 +168,7 @@ app.get("/showOne", cors(), (req, res) => {
 
   async function main() {
     const uri =
-      "mongodb+srv://sachin:sachinabs@cluster0.iaz5f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
     const client = new MongoClient(uri);
 
@@ -210,7 +210,7 @@ app.get("/VoteDown", (req, res) => {
 
   async function main() {
     const uri =
-      "mongodb+srv://sachin:sachinabs@cluster0.iaz5f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
     const client = new MongoClient(uri);
 
@@ -253,7 +253,7 @@ app.get("/VoteUp", (req, res) => {
 
   async function main() {
     const uri =
-      "mongodb+srv://sachin:sachinabs@cluster0.iaz5f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+      "mongodb+srv://MonkAno:MonkAno@cluster0.cfvup.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
     const client = new MongoClient(uri);
 
