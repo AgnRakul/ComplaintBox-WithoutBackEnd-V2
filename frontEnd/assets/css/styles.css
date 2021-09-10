@@ -1,0 +1,8 @@
+#trend_one_paragraph, #trend_two_paragraph, #trend_three_paragraph, #trend_four_paragraph 
+{   
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+} 
+
